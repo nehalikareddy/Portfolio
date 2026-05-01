@@ -1,0 +1,158 @@
+.milestones-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.milestones-header {
+  margin-bottom: 40px;
+}
+
+.section-tag {
+  color: #10b981;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.achievements-title {
+  font-size: 2rem;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+}
+
+.achievements-title::after {
+  display: none;
+}
+
+.milestone-card {
+  background: #0f1115;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.milestone-image-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.milestone-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%; /* Adjust to see the faces well */
+}
+
+.milestone-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dot-green {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.milestone-content {
+  padding: 40px;
+}
+
+.milestone-location {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.milestone-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.milestone-description {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+.highlight-white {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.highlight-green {
+  color: #bbf7d0; /* A light green to stand out but not clash */
+  font-weight: 700;
+}
+
+.milestone-stats {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #06b6d4, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4px;
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+}
+
+.stat-label {
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .milestone-image-container {
+    height: 250px;
+  }
+  
+  .milestone-content {
+    padding: 24px;
+  }
+  
+  .milestone-stats {
+    gap: 30px;
+  }
+}

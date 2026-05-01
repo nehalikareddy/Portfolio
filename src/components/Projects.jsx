@@ -1,0 +1,91 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
+import './Projects.css';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Nexus",
+      subtitle: "AI-Integrated Video Conferencing Platform",
+      description: "A real-time video conferencing app using MERN stack and WebRTC. Integrated Google Gemini 2.5 Flash for live transcript summaries and Web Speech API for live captions.",
+      tech: ["MERN", "WebRTC", "Socket.IO", "Gemini API"],
+      image: "/image copy.png",
+      github: "https://github.com/nehalikareddy/Nexus-VideoCall",
+      external: "https://nexus-videoconference-j11v.onrender.com"
+    },
+    {
+      title: "Nestora",
+      subtitle: "Full-Stack Accommodation Booking Platform",
+      description: "A comprehensive property listing platform following MVC architecture with secure authentication via Passport.js, Mapbox Geocoding API for location mapping, and Cloudinary for image storage.",
+      tech: ["Node.js", "Express.js", "MongoDB", "Mapbox"],
+      image: "/image.png",
+      github: "https://github.com/nehalikareddy/Nestora",
+      external: "https://nestora-ms4s.onrender.com/listings"
+    }
+  ];
+
+  return (
+    <section id="projects" className="projects-section">
+      <div className="container">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="section-title mono"
+        >
+          <span className="text-gradient">03.</span> Things I've Built
+        </motion.h2>
+
+        <div className="projects-list">
+          {projects.map((project, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.15 }}
+              className={`project-feature-card ${index % 2 === 1 ? 'reverse' : ''}`}
+            >
+              {/* Image */}
+              <div className="project-feature-image">
+                <a href={project.external} target="_blank" rel="noreferrer">
+                  <img src={project.image} alt={project.title} />
+                  <div className="project-image-overlay">
+                    <ExternalLink size={32} />
+                  </div>
+                </a>
+              </div>
+
+              {/* Content */}
+              <div className="project-feature-content">
+                <p className="project-number mono text-gradient">0{index + 1}.</p>
+                <h3 className="project-feature-title">{project.title}</h3>
+                <p className="project-feature-subtitle mono">{project.subtitle}</p>
+                <div className="project-feature-desc card">
+                  <p>{project.description}</p>
+                </div>
+                <ul className="project-tech mono">
+                  {project.tech.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+                <div className="project-feature-links">
+                  <a href={project.github} target="_blank" rel="noreferrer" className="proj-link">
+                    <FaGithub size={22} />
+                  </a>
+                  <a href={project.external} target="_blank" rel="noreferrer" className="proj-link">
+                    <ExternalLink size={22} />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

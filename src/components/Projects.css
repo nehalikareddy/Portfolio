@@ -1,0 +1,144 @@
+.projects-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.project-feature-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.project-feature-card.reverse {
+  direction: rtl;
+}
+
+.project-feature-card.reverse > * {
+  direction: ltr;
+}
+
+/* Image */
+.project-feature-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.project-feature-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-feature-image:hover img {
+  transform: scale(1.04);
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 182, 212, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #06b6d4;
+}
+
+.project-feature-image:hover .project-image-overlay {
+  opacity: 1;
+}
+
+/* Content */
+.project-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.project-number {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.project-feature-title {
+  font-size: 2.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.project-feature-card:hover .project-feature-title {
+  color: #06b6d4;
+  transition: color 0.3s;
+}
+
+.project-feature-subtitle {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.project-feature-desc {
+  padding: 20px;
+}
+
+.project-feature-desc p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  list-style: none;
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.project-feature-links {
+  display: flex;
+  gap: 20px;
+}
+
+.proj-link {
+  color: #64748b;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.proj-link:hover {
+  color: #06b6d4;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .projects-list {
+    gap: 60px;
+  }
+
+  .project-feature-card,
+  .project-feature-card.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 30px;
+  }
+
+  .project-feature-image img {
+    height: 240px;
+  }
+}

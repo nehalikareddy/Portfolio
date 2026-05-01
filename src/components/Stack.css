@@ -1,0 +1,68 @@
+.stack-section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.stack-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: #06b6d4;
+  color: #06b6d4;
+}
+
+.skills-grid-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.05);
+  transform: translateY(-5px);
+}
+
+.skill-badge-icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.skill-badge-name {
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  text-align: center;
+}
