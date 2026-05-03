@@ -178,12 +178,15 @@
 }
 
 @media (max-width: 992px) {
+  .hero-section {
+    padding-top: 100px;
+  }
   .hero-container {
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .hero-right-container {
-    min-height: 250px;
+    min-height: 150px;
   }
   .decorative-brackets {
     font-size: 8rem;
