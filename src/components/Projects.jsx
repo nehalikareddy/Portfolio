@@ -7,6 +7,15 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: "Clarix",
+      subtitle: "AI-Powered Legal Intelligence Platform",
+      description: "A secure, responsive web platform designed to demystify legal agreements. Built with React, Node.js, and MongoDB, it allows users to upload PDFs and uses Google Gemini 1.5 Flash to extract text, flag hidden liabilities, generate automated risk scores, and answer contextual questions via a built-in AI chat.",
+      tech: ["React", "Node.js", "MongoDB", "Gemini API"],
+      image: "/img.png",
+      github: "https://github.com/nehalikareddy/Clarix",
+      external: "https://clarix-psi.vercel.app"
+    },
+    {
       title: "Nexus",
       subtitle: "AI-Integrated Video Conferencing Platform",
       description: "A real-time video conferencing app using MERN stack and WebRTC. Integrated Google Gemini 2.5 Flash for live transcript summaries and Web Speech API for live captions.",
