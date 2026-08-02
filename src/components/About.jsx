@@ -101,7 +101,7 @@ const About = () => {
                 <span className="timeline-badge mono">2023 — Present</span>
                 <h4 className="timeline-title">B.E. in Artificial Intelligence & Machine Learning</h4>
                 <p className="timeline-institution">Sir M. Visvesvaraya Institute of Technology (Sir MVIT), Bengaluru</p>
-                <p className="timeline-score text-gradient">CGPA: 8.88 / 10</p>
+                <p className="timeline-score text-gradient">CGPA: 8.94 / 10</p>
               </div>
             </div>
             <div className="timeline-item">
