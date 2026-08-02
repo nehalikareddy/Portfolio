@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import './About.css';
+import certificates from '../data/certificates';
 
 const About = () => {
   return (
@@ -53,20 +54,21 @@ const About = () => {
             <div className="highlight-text">
               <h4 className="interests-title">Certifications</h4>
               <div className="certs-list">
-                <div className="cert-item">
-                  <div className="cert-icon">🏅</div>
-                  <div className="cert-details">
-                    <p className="cert-name">Oracle Cloud Infrastructure AI Foundations Associate</p>
-                    <p className="cert-issuer mono">Oracle</p>
+                {certificates.map((c, idx) => (
+                  <div className="cert-item" key={idx}>
+                    <div className="cert-icon">🏅</div>
+                    <div className="cert-details">
+                      {c.url ? (
+                        <a href={c.url} target="_blank" rel="noreferrer" className="cert-name-link">
+                          <div className="cert-name">{c.name} <ExternalLink size={12} /></div>
+                        </a>
+                      ) : (
+                        <div className="cert-name">{c.name}</div>
+                      )}
+                      <p className="cert-issuer mono">{c.issuer}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="cert-item">
-                  <div className="cert-icon">🏅</div>
-                  <div className="cert-details">
-                    <p className="cert-name">Full Stack Web Development</p>
-                    <p className="cert-issuer mono">Apna College</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
@@ -76,6 +78,7 @@ const About = () => {
                 <li><span className="dot"></span> Software Development</li>
                 <li><span className="dot"></span> Web Technologies</li>
                 <li><span className="dot"></span> AI & Machine Learning</li>
+                <li><span className="dot"></span> Generative AI</li>
                 <li><span className="dot"></span> Problem Solving</li>
               </ul>
             </div>
