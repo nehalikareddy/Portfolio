@@ -7,15 +7,6 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio",
-      subtitle: "Responsive Developer Portfolio Experience",
-      description: "A modern one-page portfolio built with React and Vite, designed to present my work, skills, and contact information with smooth animations, focused storytelling, and a polished visual identity.",
-      tech: ["React", "Vite", "Framer Motion", "CSS"],
-      image: "/portfolio-preview.png",
-      github: "",
-      external: ""
-    },
-    {
       title: "Clarix",
       subtitle: "AI-Powered Legal Intelligence Platform",
       description: "A secure, responsive web platform designed to demystify legal agreements. Built with React, Node.js, and MongoDB, it allows users to upload PDFs and uses Google Gemini 1.5 Flash to extract text, flag hidden liabilities, generate automated risk scores, and answer contextual questions via a built-in AI chat.",
@@ -29,25 +20,17 @@ const Projects = () => {
       subtitle: "Distributed Version Control System",
       description: "A full-stack, Git-inspired VCS with a custom CLI and web dashboard. Integrated AWS S3 for blob storage, MongoDB for commit metadata, and JWT/bcrypt for authentication. Real-time progress via Socket.IO and a React dashboard for commit graphs and analytics.",
       tech: ["React", "Node.js", "MongoDB", "Socket.IO", "AWS S3"],
-      image: "/trace-preview.svg",
+      image: "/trace-preview.png",
       github: "https://github.com/nehalikareddy/trace-backend",
       external: "https://trace-frontend-kappa.vercel.app/auth"
     },
-    {
-      title: "Nexus",
-      subtitle: "AI-Integrated Video Conferencing Platform",
-      description: "A real-time video conferencing app using MERN stack and WebRTC. Integrated Google Gemini 2.5 Flash for live transcript summaries and Web Speech API for live captions.",
-      tech: ["MERN", "WebRTC", "Socket.IO", "Gemini API"],
-      image: "/image copy.png",
-      github: "https://github.com/nehalikareddy/Nexus-VideoCall",
-      external: "https://nexus-videoconference-j11v.onrender.com"
-    },
+    
     {
       title: "Unshell",
       subtitle: "Autonomous AML & KYB Intelligence Graph",
       description: "React frontend and MERN backend for an AI-powered AML/KYB investigation platform. Built Express REST APIs, integrated MongoDB Atlas, and implemented investigation history and company workflow management.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      image: "/unshell-preview.svg",
+      image: "/unshell-preview.png",
       github: "https://github.com/nehalikareddy/unshell",
       external: "https://unshell-eight.vercel.app/"
     },
