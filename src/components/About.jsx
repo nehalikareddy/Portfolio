@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import './About.css';
 import certificates from '../data/certificates';
+import meImage from '../assets/me.jpeg';
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
             className="about-image-card"
           >
             <div className="about-image-wrapper">
-              <img src="/me.jpeg" alt="Nehalika Nadikatla" className="about-img" />
+              <img src={meImage} alt="Nehalika Nadikatla" className="about-img" />
               <div className="about-image-overlay">
                 <h3 className="overlay-title">Nehalika Nadikatla</h3>
                 <p className="overlay-subtitle mono">AIML Undergrad</p>
@@ -26,7 +27,7 @@ const About = () => {
             </div>
             <div className="about-connect-bar">
               <div className="connect-info">
-                <img src="/me.jpeg" alt="Avatar" className="connect-avatar" />
+                <img src={meImage} alt="Avatar" className="connect-avatar" />
                 <div className="connect-details">
                   <span className="mono text-gradient">@nehalika</span>
                   <span className="connect-desc mono">Undergrad Student</span>

@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import './Projects.css';
+import clarixImg from '../assets/img.png';
+import traceImg from '../assets/trace-preview.png';
+import unshellImg from '../assets/unshell-preview.png';
+import nestoraImg from '../assets/image.png';
 
 const Projects = () => {
   const projects = [
@@ -11,7 +15,7 @@ const Projects = () => {
       subtitle: "AI-Powered Legal Intelligence Platform",
       description: "A secure, responsive web platform designed to demystify legal agreements. Built with React, Node.js, and MongoDB, it allows users to upload PDFs and uses Google Gemini 1.5 Flash to extract text, flag hidden liabilities, generate automated risk scores, and answer contextual questions via a built-in AI chat.",
       tech: ["React", "Node.js", "MongoDB", "Gemini API"],
-      image: "/img.png",
+      image: clarixImg,
       github: "https://github.com/nehalikareddy/Clarix",
       external: "https://clarix-psi.vercel.app"
     },
@@ -20,7 +24,7 @@ const Projects = () => {
       subtitle: "Distributed Version Control System",
       description: "A full-stack, Git-inspired VCS with a custom CLI and web dashboard. Integrated AWS S3 for blob storage, MongoDB for commit metadata, and JWT/bcrypt for authentication. Real-time progress via Socket.IO and a React dashboard for commit graphs and analytics.",
       tech: ["React", "Node.js", "MongoDB", "Socket.IO", "AWS S3"],
-      image: "/trace-preview.png",
+      image: traceImg,
       github: "https://github.com/nehalikareddy/trace-backend",
       external: "https://trace-frontend-kappa.vercel.app/auth"
     },
@@ -30,7 +34,7 @@ const Projects = () => {
       subtitle: "Autonomous AML & KYB Intelligence Graph",
       description: "React frontend and MERN backend for an AI-powered AML/KYB investigation platform. Built Express REST APIs, integrated MongoDB Atlas, and implemented investigation history and company workflow management.",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      image: "/unshell-preview.png",
+      image: unshellImg,
       github: "https://github.com/nehalikareddy/unshell",
       external: "https://unshell-eight.vercel.app/"
     },
@@ -39,7 +43,7 @@ const Projects = () => {
       subtitle: "Full-Stack Accommodation Booking Platform",
       description: "A comprehensive property listing platform following MVC architecture with secure authentication via Passport.js, Mapbox Geocoding API for location mapping, and Cloudinary for image storage.",
       tech: ["Node.js", "Express.js", "MongoDB", "Mapbox"],
-      image: "/image.png",
+      image: nestoraImg,
       github: "https://github.com/nehalikareddy/Nestora",
       external: "https://nestora-ms4s.onrender.com/listings"
     }

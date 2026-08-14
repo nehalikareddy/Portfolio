@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Milestones.css';
+import hackfestImg from '../assets/hackfest.jpeg';
 
 const Milestones = () => {
   return (
@@ -25,7 +26,7 @@ const Milestones = () => {
           className="milestone-card"
         >
           <div className="milestone-image-container">
-            <img src="/hackfest.jpeg" alt="Hackfest 2nd Runner Up" className="milestone-image" />
+            <img src={hackfestImg} alt="Hackfest 2nd Runner Up" className="milestone-image" />
             <div className="milestone-badge mono">
               <span className="dot dot-green"></span> PODIUM FINISH
             </div>
